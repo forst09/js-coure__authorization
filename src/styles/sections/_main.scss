@@ -1,0 +1,21 @@
+@use "../utils/mixin" as m;
+
+.main {
+   display: flex;
+   min-height: calc(100vh - var(--header-height));
+   height: fit-content;
+
+    &__img {
+        width: 54%;
+        height: auto;
+    }
+
+    &__img-img {
+        object-position: center center;
+    }
+
+    &__form-wrapper {
+        width: 46%;
+        padding: 103px 93px;
+    }
+}

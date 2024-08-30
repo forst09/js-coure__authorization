@@ -1,0 +1,22 @@
+@use "mixin" as m;
+
+:root {
+    --btn-color: #111111;
+    --btn-bg: transparent;
+    --btn-active-bg:#111111;
+    --btn-active-color:  #FFFFFF;
+    --btn-stroke: #111111;
+
+    --text-primary: #333333;
+    --hint:rgba(102, 102, 102, 0.80);
+
+    --br-s: 8px;
+
+    --stroke: rgba(102, 102, 102, 0.25);
+
+    --header-height: 76px;
+}
+
+@include m.tablet-s {
+  
+}
