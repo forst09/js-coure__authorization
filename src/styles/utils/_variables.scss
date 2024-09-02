@@ -8,13 +8,19 @@
     --btn-stroke: #111111;
 
     --text-primary: #333333;
+    --text-secondary: #666666;
     --hint:rgba(102, 102, 102, 0.80);
 
     --br-s: 8px;
+    --br-m: 12px;
 
     --stroke: rgba(102, 102, 102, 0.25);
+    --stroke-input: rgba(102, 102, 102, 0.35);
 
     --header-height: 76px;
+
+    --icon: #666666CC;
+    --icon-dark: #111111;
 }
 
 @include m.tablet-s {

@@ -10,28 +10,73 @@
         <h1 class="title">Sign up</h1>
         <p class="hint">Sign up for free to access to in any of our products </p>
         <form class="form main__form">
-            <div class="form__item">
-                <label for="email">Email address</label>
-                <input
-                    type="email"
-                    id="email"
-                >
-            </div>
-            <div class="form__item form__password">
-                <div class="form__password-top">
-                    <label for="email">Password</label>
-                    <button
-                        type="button"
-                        class="form__password-toggle"
+            <div class="form__wrapper">
+                <div class="form__item">
+                    <label
+                        class="form__label"
+                        for="email"
+                    >Email address</label>
+                    <input
+                        class="form__input"
+                        type="email"
+                        id="email"
                     >
-                        <span>Hide</span>
-                    </button>
                 </div>
-                <input
-                    type="password"
-                    id="password"
-                >
-                <span class="form__hint">Use 8 or more characters with a mix of letters, numbers & symbols</span>
+                <div class="form__item form__password">
+                    <div class="form__password-top">
+                        <label
+                            class="form__label"
+                            for="password"
+                        >Password</label>
+                        <button
+                            type="button"
+                            class="form__password-toggle"
+                        >
+                            <span class="form__password-toggle-text">Show</span>
+                        </button>
+                    </div>
+                    <input
+                        class="form__input form__password-input"
+                        type="password"
+                        id="password"
+                    >
+                    <span class="form__hint">Use 8 or more characters with a mix of letters, numbers & symbols</span>
+                </div>
+            </div>
+            <div class="form__checkboxes">
+                <div class="form__checkbox">
+                    <input
+                        class="visually-hidden form__checkbox-input"
+                        type="checkbox"
+                        name="agree"
+                        id="agree"
+                        checked
+                    >
+                    <label
+                        class="form__checkbox-label"
+                        for="agree"
+                    >Agree to our <a
+                            href=""
+                            class="link-underline"
+                        >Terms of use</a> and <a
+                            href=""
+                            class="link-underline"
+                        >Privacy
+                            Policy</a></label>
+                </div>
+                <div class="form__checkbox">
+                    <input
+                        class="visually-hidden form__checkbox-input"
+                        type="checkbox"
+                        name="subscribe"
+                        id="subscribe"
+                        checked
+                    >
+                    <label
+                        class="form__checkbox-label"
+                        for="subscribe"
+                    >Subscribe to our monthly newsletter</label>
+                </div>
             </div>
         </form>
     </div>

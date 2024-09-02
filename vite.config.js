@@ -5,7 +5,6 @@ import handlebars from 'vite-plugin-handlebars';
 import autoprefixer from 'autoprefixer';
 import sortMediaQueries from 'postcss-sort-media-queries';
 import legacy from '@vitejs/plugin-legacy';
-import eslintPlugin from '@nabla/vite-plugin-eslint';
 
 export default defineConfig(() => {
     return {
@@ -41,8 +40,7 @@ export default defineConfig(() => {
             }),
             legacy({
                 targets: ['defaults', 'not IE 11'],
-            }),
-            eslintPlugin(),
+            })
         ],
         css: {
             postcss: {
