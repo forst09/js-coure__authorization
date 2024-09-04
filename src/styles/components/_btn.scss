@@ -45,3 +45,23 @@
 .link-underline {
     text-decoration: underline;
 }
+
+.btn-submit {
+    min-width: 250px;
+    padding: 15px;
+    background-color: var(--btn-submit-bg);
+    color: var(--btn-submit-color);
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: var(--br-l);
+    border: unset;
+
+    &:disabled {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.25;
+    }
+}

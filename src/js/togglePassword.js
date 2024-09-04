@@ -1,4 +1,4 @@
-export default function hehe(form) {
+export default function togglePassword(form) {
     const btn = form.querySelector('.form__password-toggle');
     btn.addEventListener('click', () => {
         btn.classList.toggle('form__password-toggle--show');
