@@ -49,7 +49,7 @@ export default function submitForm(form) {
                                     pasteError(emailInput, 'Invalid email');
                                     break;
                                 case 'auth/email-already-in-use':
-                                    pasteError(emailInput, 'Email already in use. <a href="" class="link-underline">Login</a>');
+                                    pasteError(emailInput, 'Email already in use. <a href="" class="link-underline" data-tab="login">Login</a>');
                                     break;
                                 default: 
                                     pasteError(form.querySelector('.form__checkboxes'), message);

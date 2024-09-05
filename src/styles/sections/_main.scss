@@ -7,7 +7,8 @@
 
     &__img {
         width: 54%;
-        height: auto;
+        // height: auto;
+        height: calc(100vh - var(--header-height));
     }
 
     &__img-img {
@@ -15,8 +16,10 @@
     }
 
     &__form-wrapper {
+        position: sticky;
+        top: 0;
         width: 46%;
-        padding: 103px 93px;
+        height: fit-content;
     }
 
     &__form {
