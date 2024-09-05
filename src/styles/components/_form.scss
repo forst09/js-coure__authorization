@@ -134,4 +134,9 @@
     &__message-link {
         color: var(--text-accent);
     }
+
+    &__error {
+        color: var(--error);
+        font-size: 14px;
+    }
 }
