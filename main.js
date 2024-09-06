@@ -5,11 +5,13 @@ import submitForm from "./src/js/submitForm";
 import tabs from "./src/js/tabs";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('.form-js');
+    const forms = document.querySelectorAll('.form-js');
 
-    if (form) {
-        togglePassword(form);
-        submitForm(form);
+    if (forms.length > 0) {
+        forms.forEach(form => {
+            togglePassword(form);
+            submitForm(form);
+        })
     }
 
     tabs();

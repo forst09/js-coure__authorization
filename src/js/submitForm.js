@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import pasteError from "./pasteError";
+import tabs from "./tabs";
 
 export default function submitForm(form) {
     const firebaseConfig = {
@@ -50,6 +51,7 @@ export default function submitForm(form) {
                                     break;
                                 case 'auth/email-already-in-use':
                                     pasteError(emailInput, 'Email already in use. <a href="" class="link-underline" data-tab="login">Login</a>');
+                                    tabs();
                                     break;
                                 default: 
                                     pasteError(form.querySelector('.form__checkboxes'), message);
