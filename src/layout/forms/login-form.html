@@ -1,17 +1,17 @@
 <div class="form-login tab-wrap" id="login">
     <h1 class="title">Log in</h1>
     <p class="hint">New to Design Space? <a href="" class="link-underline" data-tab="sign-up">Sign up for free</a></p>
-    <form class="form main__form form-login__form form-js">
+    <form class="form main__form form-login__form form-js" data-form="login">
         <div class="form__wrapper">
             <div class="form__item">
                 <label
                     class="form__label"
-                    for="email"
+                    for="login-email"
                 >Email address</label>
                 <input
-                    class="form__input"
+                    class="form__input email-input"
                     type="email"
-                    id="email" 
+                    id="login-email" 
                     required
                 >
             </div>
@@ -19,7 +19,7 @@
                 <div class="form__password-top">
                     <label
                         class="form__label"
-                        for="password"
+                        for="login-password"
                     >Password</label>
                     <button
                         type="button"
@@ -29,9 +29,9 @@
                     </button>
                 </div>
                 <input
-                    class="form__input form__password-input"
+                    class="form__input form__password-input password-input"
                     type="password"
-                    id="password"
+                    id="login-password"
                     required
                 >
             </div>
