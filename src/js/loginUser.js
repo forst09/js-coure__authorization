@@ -6,9 +6,10 @@ export default function loginUser(form, emailInput, passwordInput, auth) {
         .then((userCredential) => {
             const user = userCredential.user;
             localStorage.setItem('user', user.email);
-            console.log(user);
-            window.location.pathname = 'login.html';
-            console.log(document.querySelector('h1'));
+            console.log(window.location.pathname);
+            // setTimeout(() => {
+                window.location.pathname = `${window.location.pathname}nested/login.html`;
+            // }, 10000)
         })
         .catch((error) => {            
             const { code, message } = error;

@@ -9,6 +9,14 @@ import legacy from '@vitejs/plugin-legacy';
 export default defineConfig(() => {
     return {
         base: './',
+        build: {
+            rollupOptions: {
+                input: {
+                    main: resolve(__dirname, 'index.html'),
+                    login: resolve(__dirname, 'nested/login.html')
+                }
+            }
+        },
         plugins: [
             ViteImageOptimizer({
                 jpg: {
