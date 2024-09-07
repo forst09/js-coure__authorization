@@ -2,11 +2,9 @@ import pasteError from "./pasteError";
 import tabs from "./tabs";
 import createUser from "./createUser";
 import loginUser from "./loginUser";
-import { app, auth } from "./initFirebase";
+import { auth } from "./initFirebase";
 
 export default function submitForm(form) {
-    console.log(app, auth);
-
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 

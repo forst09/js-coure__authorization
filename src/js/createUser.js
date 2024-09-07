@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import pasteError from "./pasteError";
 import tabs from "./tabs";
 
@@ -7,6 +7,12 @@ export default function createUser(form, emailInput, passwordInput, auth) {
 
     if (agreeCheck.checked) {
         createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
+            .then(() => {
+                sendEmailVerification(auth.currentUser)
+                .then(() => {
+                    console.log('send email');
+                })
+            })
             .then((userCredential) => {
                 const user = userCredential.user;
             })
