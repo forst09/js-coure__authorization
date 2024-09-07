@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.location.pathname.includes('nested/login.html')) {
                 window.location.pathname = window.location.pathname.replace('nested/login.html', '');
             }
-            console.log('not hehe');
+            console.log('not login haha');
         }
     })
 
