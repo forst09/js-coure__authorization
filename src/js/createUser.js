@@ -1,18 +1,22 @@
 import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
 import pasteError from "./pasteError";
 import tabs from "./tabs";
+import pastePreloader from "./pastePreloader";
 
 export default function createUser(form, emailInput, passwordInput, auth) { 
     const agreeCheck = form.querySelector('#agree');
 
     if (agreeCheck.checked) {
+        pastePreloader(form);
         createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
             .then(() => {
-                if (auth.currentUser.emailVerified === false) {
-                    sendEmailVerification(auth.currentUser)
-                }
+                sendEmailVerification(auth.currentUser);
+
+                document.querySelector('.preloader').remove();
             })
             .catch((error) => {
+                document.querySelector('.preloader').remove();
+
                 const { code, message } = error;
                 
                 switch(code) {

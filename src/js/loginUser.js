@@ -1,12 +1,17 @@
 import { signInWithEmailAndPassword  } from "firebase/auth";
 import pasteError from "./pasteError";
+import pastePreloader from "./pastePreloader";
 
 export default function loginUser(form, emailInput, passwordInput, auth) {
+    pastePreloader(form);
     signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
-        .then((userCredential) => {
+        .then(() => {
+            document.querySelector('.preloader').remove();
             window.location.pathname = `${window.location.pathname}nested/login.html`;
         })
-        .catch((error) => {            
+        .catch((error) => {  
+            document.querySelector('.preloader').remove();
+
             const { code, message } = error;
             switch(code) {
                 case 'auth/invalid-credential':
