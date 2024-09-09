@@ -8,13 +8,9 @@ export default function createUser(form, emailInput, passwordInput, auth) {
     if (agreeCheck.checked) {
         createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
             .then(() => {
-                sendEmailVerification(auth.currentUser)
-                .then(() => {
-                    console.log('send email');
-                })
-            })
-            .then((userCredential) => {
-                const user = userCredential.user;
+                if (auth.currentUser.emailVerified === false) {
+                    sendEmailVerification(auth.currentUser)
+                }
             })
             .catch((error) => {
                 const { code, message } = error;

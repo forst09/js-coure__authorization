@@ -6,10 +6,9 @@ export default function signOutUser() {
     if (signOutBtn) {
         signOutBtn.addEventListener('click', () => {
             signOut(auth).then(() => {
-                console.log('sign out');
                 window.location.pathname = window.location.pathname.replace('nested/login.html', '');
             }).catch((error) => {
-                console.log(error);
+                throw new Error(error);
             })
         });
     }

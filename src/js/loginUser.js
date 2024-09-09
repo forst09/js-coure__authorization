@@ -4,9 +4,6 @@ import pasteError from "./pasteError";
 export default function loginUser(form, emailInput, passwordInput, auth) {
     signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
         .then((userCredential) => {
-            const user = userCredential.user;
-            localStorage.setItem('user', user.email);
-            console.log(window.location.pathname);
             window.location.pathname = `${window.location.pathname}nested/login.html`;
         })
         .catch((error) => {            

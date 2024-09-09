@@ -65,3 +65,37 @@
         opacity: 0.25;
     }
 }
+
+.btn-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    max-width: 578px;
+    width: 100%;
+    background-color: var(--btn-social-bg);
+    color: var(--btn-social-color);
+    border: 1px solid var(--btn-stroke);
+    border-radius: var(--br-xl);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    &::before {
+        content: '';
+        aspect-ratio: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &--google {
+        &::before {
+            width: 24px;
+            background-image: url("/icons/google.svg");
+        }
+    }
+}

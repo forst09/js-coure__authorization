@@ -7,6 +7,7 @@ import showUser from "./src/js/showUser";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./src/js/initFirebase";
 import signOutUser from "./src/js/signOutUser";
+import signUpGoogle from "./src/js/signUpGoogle";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -24,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.location.pathname.includes('nested/login.html')) {
                 window.location.pathname = window.location.pathname.replace('nested/login.html', '');
             }
-            console.log('not login haha');
         }
     })
 
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         forms.forEach(form => {
             togglePassword(form);
             submitForm(form);
+            signUpGoogle(auth, form);
         })
     }
 
