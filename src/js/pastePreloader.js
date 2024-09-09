@@ -17,18 +17,12 @@ export default function pastePreloader(form) {
                 cy="50"
                 r="44"
                 style="opacity:0.5;" />
-            <circle fill="#fff"
+            <circle fill="#fff" class="preloader__circle"
                 stroke="#B898C4"
                 stroke-width="3"
                 cx="8"
                 cy="54"
                 r="6">
-                <animateTransform attributeName="transform"
-                    dur="2s"
-                    type="rotate"
-                    from="0 50 48"
-                    to="360 50 52"
-                    repeatCount="indefinite" />
             </circle>
         </svg>
     `;

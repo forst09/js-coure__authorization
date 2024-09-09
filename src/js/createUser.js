@@ -7,7 +7,7 @@ export default function createUser(form, emailInput, passwordInput, auth) {
     const agreeCheck = form.querySelector('#agree');
 
     if (agreeCheck.checked) {
-        pastePreloader(form);
+        pastePreloader(form.closest('.tab-wrap'));
         createUserWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
             .then(() => {
                 sendEmailVerification(auth.currentUser);

@@ -3,11 +3,11 @@ import pasteError from "./pasteError";
 import pastePreloader from "./pastePreloader";
 
 export default function loginUser(form, emailInput, passwordInput, auth) {
-    pastePreloader(form);
+    pastePreloader(form.closest('.tab-wrap'));
     signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
         .then(() => {
             document.querySelector('.preloader').remove();
-            window.location.pathname = `${window.location.pathname}nested/login.html`;
+            // window.location.pathname = `${window.location.pathname}login.html`;
         })
         .catch((error) => {  
             document.querySelector('.preloader').remove();

@@ -7,8 +7,12 @@
         >
     </div>
     <div class="main__form-wrapper">
-        {{> forms/login-form }}
+        <div class="tab-wrap" id="login">
+            {{> forms/login-form }}
+        </div>
 
-        {{> forms/auth-form }}
+        <div class="tab-wrap" id="sign-up">
+            {{> forms/auth-form }}
+        </div>
     </div>
 </section>

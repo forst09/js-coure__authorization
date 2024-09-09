@@ -8,9 +8,9 @@
     content="width=device-width, initial-scale=1.0"
   />
   <title>js-course - authorization</title>
-  <script type="module" crossorigin src="./assets/main-CsxzCSG6.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/main-DY70ezBf.js">
-  <link rel="stylesheet" crossorigin href="./assets/main-B6s0wJSL.css">
+  <script type="module" crossorigin src="./assets/main-Ehifvl8L.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-BioKS3Mm.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-DUROnBD3.css">
   <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
   <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 </head>
@@ -40,152 +40,156 @@
             >
         </div>
         <div class="main__form-wrapper">
-            <div class="form-login tab-wrap" id="login">
-                <h1 class="title">Log in</h1>
-                <p class="hint">New to Design Space? <a href="" class="link-underline" data-tab="sign-up">Sign up for free</a></p>
-                <form class="form main__form form-login__form form-js" data-form="login">
-                    <div class="form__wrapper">
-                        <div class="form__item">
-                            <label
-                                class="form__label"
-                                for="login-email"
-                            >Email address</label>
-                            <input
-                                class="form__input email-input"
-                                type="email"
-                                id="login-email" 
-                                required
-                            >
-                        </div>
-                        <div class="form__item form__password">
-                            <div class="form__password-top">
+            <div class="tab-wrap" id="login">
+                <div class="form-login main__form-wrap-form">
+                    <h1 class="title">Log in</h1>
+                    <p class="hint">New to Design Space? <a href="" class="link-underline" data-tab="sign-up">Sign up for free</a></p>
+                    <form class="form main__form form-login__form form-js" data-form="login">
+                        <div class="form__wrapper">
+                            <div class="form__item">
                                 <label
                                     class="form__label"
-                                    for="login-password"
-                                >Password</label>
-                                <button
-                                    type="button"
-                                    class="form__password-toggle"
+                                    for="login-email"
+                                >Email address</label>
+                                <input
+                                    class="form__input email-input"
+                                    type="email"
+                                    id="login-email" 
+                                    required
                                 >
-                                    <span class="form__password-toggle-text">Show</span>
-                                </button>
                             </div>
-                            <input
-                                class="form__input form__password-input password-input"
-                                type="password"
-                                id="login-password"
-                                required
-                            >
+                            <div class="form__item form__password">
+                                <div class="form__password-top">
+                                    <label
+                                        class="form__label"
+                                        for="login-password"
+                                    >Password</label>
+                                    <button
+                                        type="button"
+                                        class="form__password-toggle"
+                                    >
+                                        <span class="form__password-toggle-text">Show</span>
+                                    </button>
+                                </div>
+                                <input
+                                    class="form__input form__password-input password-input"
+                                    type="password"
+                                    id="login-password"
+                                    required
+                                >
+                            </div>
                         </div>
-                    </div>
-                    <button type="button" class="btn-social btn-social--google sign-up-google">
-                        <span>Continue with Google</span>
-                    </button>
-                    <div class="form__actions">
-                        <button
-                            class="btn-submit"
-                            type="submit"
-                        >Log in</button>
-                    </div>
-                </form>
-            </div>
-            <div class="form-auth tab-wrap" id="sign-up">
-                <h1 class="title">Sign up</h1>
-                <p class="hint">Sign up for free to access to in any of our products </p>
-                <form class="form main__form form-auth__form form-js" data-form="sign-up">
-                    <div class="form__wrapper">
-                        <div class="form__item">
-                            <label
-                                class="form__label"
-                                for="sign-up-email"
-                            >Email address</label>
-                            <input
-                                class="form__input email-input"
-                                type="email"
-                                id="sign-up-email" 
-                                required
-                            >
+                        <button type="button" class="btn-social btn-social--google sign-up-google">
+                            <span>Continue with Google</span>
+                        </button>
+                        <div class="form__actions">
+                            <button
+                                class="btn-submit"
+                                type="submit"
+                            >Log in</button>
                         </div>
-                        <div class="form__item form__password">
-                            <div class="form__password-top">
+                    </form>
+                </div>        </div>
+    
+            <div class="tab-wrap" id="sign-up">
+                <div class="form-auth main__form-wrap-form">
+                    <h1 class="title">Sign up</h1>
+                    <p class="hint">Sign up for free to access to in any of our products </p>
+                    <form class="form main__form form-auth__form form-js" data-form="sign-up">
+                        <div class="form__wrapper">
+                            <div class="form__item">
                                 <label
                                     class="form__label"
-                                    for="sign-ip-password"
-                                >Password</label>
-                                <button
-                                    type="button"
-                                    class="form__password-toggle"
+                                    for="sign-up-email"
+                                >Email address</label>
+                                <input
+                                    class="form__input email-input"
+                                    type="email"
+                                    id="sign-up-email" 
+                                    required
                                 >
-                                    <span class="form__password-toggle-text">Show</span>
-                                </button>
                             </div>
-                            <input
-                                class="form__input form__password-input password-input"
-                                type="password"
-                                id="sign-ip-password"
-                                required
-                            >
-                            <span class="form__hint">Use 6 or more characters</span>
+                            <div class="form__item form__password">
+                                <div class="form__password-top">
+                                    <label
+                                        class="form__label"
+                                        for="sign-ip-password"
+                                    >Password</label>
+                                    <button
+                                        type="button"
+                                        class="form__password-toggle"
+                                    >
+                                        <span class="form__password-toggle-text">Show</span>
+                                    </button>
+                                </div>
+                                <input
+                                    class="form__input form__password-input password-input"
+                                    type="password"
+                                    id="sign-ip-password"
+                                    required
+                                >
+                                <span class="form__hint">Use 6 or more characters</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form__checkboxes">
-                        <div class="form__checkbox">
-                            <input
-                                class="visually-hidden form__checkbox-input"
-                                type="checkbox"
-                                name="agree"
-                                id="agree"
-                                checked
-                            >
-                            <label
-                                class="form__checkbox-label"
-                                for="agree"
-                            >Agree to our <a
+                        <div class="form__checkboxes">
+                            <div class="form__checkbox">
+                                <input
+                                    class="visually-hidden form__checkbox-input"
+                                    type="checkbox"
+                                    name="agree"
+                                    id="agree"
+                                    checked
+                                >
+                                <label
+                                    class="form__checkbox-label"
+                                    for="agree"
+                                >Agree to our <a
+                                        href=""
+                                        class="link-underline"
+                                    >Terms of use</a> and <a
+                                        href=""
+                                        class="link-underline"
+                                    >Privacy
+                                        Policy</a></label>
+                            </div>
+                            <div class="form__checkbox">
+                                <input
+                                    class="visually-hidden form__checkbox-input"
+                                    type="checkbox"
+                                    name="subscribe"
+                                    id="subscribe"
+                                    checked
+                                >
+                                <label
+                                    class="form__checkbox-label"
+                                    for="subscribe"
+                                >Subscribe to our monthly newsletter</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-social btn-social--google sign-up-google">
+                            <span>Continue with Google</span>
+                        </button>
+                        <div class="form__actions">
+                            <button
+                                class="btn-submit"
+                                type="submit"
+                            >Sign up</button>
+                            <p class="form__message">Already have an ccount? <a
                                     href=""
-                                    class="link-underline"
-                                >Terms of use</a> and <a
-                                    href=""
-                                    class="link-underline"
-                                >Privacy
-                                    Policy</a></label>
+                                    class="link-underline form__message-link"
+                                    data-tab="login"
+                                >Log in</a></p>
                         </div>
-                        <div class="form__checkbox">
-                            <input
-                                class="visually-hidden form__checkbox-input"
-                                type="checkbox"
-                                name="subscribe"
-                                id="subscribe"
-                                checked
-                            >
-                            <label
-                                class="form__checkbox-label"
-                                for="subscribe"
-                            >Subscribe to our monthly newsletter</label>
-                        </div>
-                    </div>
-                    <button type="button" class="btn-social btn-social--google sign-up-google">
-                        <span>Continue with Google</span>
-                    </button>
-                    <div class="form__actions">
-                        <button
-                            class="btn-submit"
-                            type="submit"
-                        >Sign up</button>
-                        <p class="form__message">Already have an ccount? <a
-                                href=""
-                                class="link-underline form__message-link"
-                                data-tab="login"
-                            >Log in</a></p>
-                    </div>
-                </form>
-            </div>    </div>
+                    </form>
+                </div>        </div>
+        </div>
     </section>
   </main>
   
   <script src="https://www.google.com/recaptcha/api.js?render=6LfWtDYqAAAAAHhBYBWjJXByndWG6efoLppU0DCH"></script>
   <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
   <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-bfJQ4WyN.js"></script>
-  <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/main-legacy-BjOfEaBv.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/main-legacy-DfErP6oj.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 </body>
 
 </html>
