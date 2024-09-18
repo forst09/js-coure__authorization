@@ -55,6 +55,7 @@
         font-style: normal;
         font-weight: 400;
         color: var(--hint);
+        transition: color 0.3s ease;
         
         &::before {
             content: '';
@@ -63,11 +64,22 @@
             aspect-ratio: 1;
             mask-image: url("/icons/show.svg");
             background-color: var(--icon);
+            transition: background-color 0.3s ease;
         }
 
         &.form__password-toggle--show {
             &::before {
                 mask-image: url("/icons/hide.svg");
+            }
+        }
+
+        @include m.hover {
+            &:hover {
+                color: var(--hint-hover);
+
+                &::before {
+                    background-color: var(--hint-hover);
+                }
             }
         }
     }    

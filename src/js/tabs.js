@@ -1,5 +1,3 @@
-import calcFormsHeight from "./calcFormsHeight";
-
 export default function tabs() {
     const tabBtns = document.querySelectorAll('[data-tab]');
     const tabWraps = document.querySelectorAll('.tab-wrap');
@@ -20,7 +18,6 @@ export default function tabs() {
                     wrap.classList.remove('active');
                     if (wrap.getAttribute('id') === tabId) {
                         wrap.classList.add('active');
-                        // calcFormsHeight(wrap);
                     }
                 })
             })

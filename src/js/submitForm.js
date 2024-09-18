@@ -1,5 +1,3 @@
-import pasteError from "./pasteError";
-import tabs from "./tabs";
 import createUser from "./createUser";
 import loginUser from "./loginUser";
 import { auth } from "./initFirebase";

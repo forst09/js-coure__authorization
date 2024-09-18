@@ -5,7 +5,6 @@ export default function calcFormsHeight() {
         formsHeight.push(wrap.scrollHeight);
     });
     const maxHeight = Math.max(...formsHeight);
-    console.log(formsHeight, maxHeight);
     
     document.querySelector('.main__form-wrapper').style.minHeight = `${maxHeight}px`;
     if (window.innerWidth > 1365) {
