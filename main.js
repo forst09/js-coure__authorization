@@ -9,7 +9,7 @@ import signOutUser from "./src/js/signOutUser";
 import signUpGoogle from "./src/js/signUpGoogle";
 import calcFormsHeight from "./src/js/calcFormsHeight";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('readystatechange', () => {
 
     onAuthStateChanged(auth, (user) => {
         if (user) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             signUpGoogle(auth, form);
         });
 
-        calcFormsHeight(forms);
+        calcFormsHeight();
     }
 
     tabs();

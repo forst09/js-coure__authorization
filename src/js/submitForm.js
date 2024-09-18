@@ -18,15 +18,11 @@ export default function submitForm(form) {
             })
         };
 
-        grecaptcha.ready(() => {
-            grecaptcha.execute('6LfWtDYqAAAAAHhBYBWjJXByndWG6efoLppU0DCH', { action: 'submit' }).then(() => {
-                if (form.getAttribute('data-form') === 'sign-up') {
-                    createUser(form, emailInput, passwordInput, auth);
-                }
-                else {
-                    loginUser(form, emailInput, passwordInput, auth);
-                }
-            })
-        });
+        if (form.getAttribute('data-form') === 'sign-up') {
+            createUser(form, emailInput, passwordInput, auth);
+        }
+        else {
+            loginUser(form, emailInput, passwordInput, auth);
+        }
     })
 }
