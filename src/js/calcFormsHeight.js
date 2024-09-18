@@ -7,5 +7,7 @@ export default function calcFormsHeight() {
     const maxHeight = Math.max(...formsHeight);
     
     document.querySelector('.main__form-wrapper').style.minHeight = `${maxHeight}px`;
-    document.querySelector('.main').style.maxHeight = `${maxHeight}px`;
+    if (window.innerWidth > 1365) {
+        document.querySelector('.main').style.maxHeight = `${maxHeight}px`;
+    }
 }

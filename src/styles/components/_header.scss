@@ -8,5 +8,14 @@
         display: flex;
         gap: 16px;
         justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+}
+
+@include m.tablet-s {
+    .header {
+        &__btns {
+            gap: 8px;
+        }
     }
 }

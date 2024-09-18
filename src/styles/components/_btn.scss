@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 20px;
+    padding: 17px;
     max-width: 578px;
     width: 100%;
     background-color: var(--btn-social-bg);
@@ -97,5 +97,23 @@
             width: 24px;
             background-image: url("/icons/google.svg");
         }
+    }
+}
+
+@include m.tablet {
+    .btn-submit {
+        width: 100%;
+    }
+}
+
+@include m.tablet-s {
+    .btn-social {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .btn-submit {
+        font-size: 18px;
+        padding: 12px;
     }
 }

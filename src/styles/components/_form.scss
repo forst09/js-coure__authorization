@@ -140,3 +140,34 @@
         font-size: 14px;
     }
 }
+
+@include m.tablet {
+    .form {
+        gap: 24px;
+
+        &__wrapper {
+            gap: 12px;
+        }
+    }
+}
+
+@include m.tablet-s {
+    .form {
+        &__input {
+            min-height: unset;
+        }
+
+        &__checkboxes {
+            gap: 4px;
+        }
+
+        &__checkbox-label {
+            padding: 4px 4px 4px 32px;
+
+            &::before,
+            &::after {
+                top: 4px;
+            }
+        }
+    }
+}
