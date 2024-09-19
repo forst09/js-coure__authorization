@@ -1,10 +1,9 @@
 import { GoogleAuthProvider, signInWithPopup, sendEmailVerification } from "firebase/auth";
-import pasteError from "./pasteError";
+import pasteError from "../forms/pasteError";
 
 export default function signUpGoogle(auth, form) {
     const googleBtns = form.querySelectorAll('.sign-up-google');
-    if (googleBtns.length > 0) {
-        
+    if (googleBtns.length > 0) {        
         function signInPopup() {
             const provider = new GoogleAuthProvider();
             signInWithPopup(auth, provider)
@@ -17,7 +16,7 @@ export default function signUpGoogle(auth, form) {
                 })
         }
 
-        googleBtns.forEach(googleBtn=> {       
+        googleBtns.forEach(googleBtn => {       
             googleBtn.addEventListener('click', () => {
                 const agreeCheck = form.querySelector('#agree');
                 if (agreeCheck) {

@@ -1,6 +1,6 @@
-import createUser from "./createUser";
-import loginUser from "./loginUser";
-import { auth } from "./initFirebase";
+import createUser from "../auth/createUser";
+import loginUser from "../auth/loginUser";
+import { auth } from "../auth/initFirebase";
 
 export default function submitForm(form) {
     form.addEventListener('submit', (e) => {
@@ -10,7 +10,7 @@ export default function submitForm(form) {
         const passwordInput = form.querySelector('.password-input');
         const errors = document.querySelectorAll('.form__error');
 
-        if (errors.length>0) {
+        if (errors.length > 0) {
             errors.forEach(error=> {
                 error.remove();
             })

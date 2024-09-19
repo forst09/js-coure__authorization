@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth";
-import pasteError from "./pasteError";
-import tabs from "./tabs";
+import pasteError from "../forms/pasteError";
+import tabs from "../tabs";
 import pastePreloader from "./pastePreloader";
 
 export default function createUser(form, emailInput, passwordInput, auth) { 

@@ -1,13 +1,13 @@
 'use strict';
 
-import togglePassword from "./src/js/togglePassword";
-import submitForm from "./src/js/submitForm";
+import togglePassword from "./src/js/forms/togglePassword";
+import submitForm from "./src/js/forms/submitForm";
 import tabs from "./src/js/tabs";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./src/js/initFirebase";
-import signOutUser from "./src/js/signOutUser";
-import signUpGoogle from "./src/js/signUpGoogle";
-import calcFormsHeight from "./src/js/calcFormsHeight";
+import { auth } from "./src/js/auth/initFirebase";
+import signOutUser from "./src/js/auth/signOutUser";
+import signUpGoogle from "./src/js/auth/signUpGoogle";
+import calcFormsHeight from "./src/js/forms/calcFormsHeight";
 
 document.addEventListener('readystatechange', () => {
 

@@ -1,5 +1,5 @@
 import { signInWithEmailAndPassword  } from "firebase/auth";
-import pasteError from "./pasteError";
+import pasteError from "../forms/pasteError";
 import pastePreloader from "./pastePreloader";
 
 export default function loginUser(form, emailInput, passwordInput, auth) {
@@ -7,7 +7,6 @@ export default function loginUser(form, emailInput, passwordInput, auth) {
     signInWithEmailAndPassword(auth, emailInput.value, passwordInput.value)
         .then(() => {
             document.querySelector('.preloader').remove();
-            // window.location.pathname = `${window.location.pathname}login.html`;
         })
         .catch((error) => {  
             document.querySelector('.preloader').remove();

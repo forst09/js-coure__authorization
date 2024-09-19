@@ -1,6 +1,7 @@
 @use "mixin" as m;
 
 :root {
+    --bg-primary: #FFFFFF; 
     --btn-color: #111111;
     --btn-bg: transparent;
     --btn-active-bg:#111111;
@@ -39,8 +40,4 @@
 
     --icon: #666666CC;
     --icon-dark: #111111;
-}
-
-@include m.tablet-s {
-  
 }
