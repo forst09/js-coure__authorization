@@ -8,7 +8,7 @@ export default function signUpGoogle(auth, form) {
             const provider = new GoogleAuthProvider();
             signInWithPopup(auth, provider)
                 .then(() => {
-                    if (auth.currentUser.emailVerified === false) {
+                    if (!auth.currentUser.emailVerified) {
                         sendEmailVerification(auth.currentUser);
                     }
                 }).catch((error) => {

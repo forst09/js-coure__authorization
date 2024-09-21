@@ -52,6 +52,10 @@ body {
 	white-space: nowrap;
 }
 
+.scroll-lock {
+	overflow-y: hidden;
+}
+ 
 @include m.tablet {
 	.container {
 		padding: 0 16px;

@@ -1,3 +1,4 @@
+import showPopup from "../popup/showPopup";
 import { auth } from "./initFirebase";
 import { signOut } from "firebase/auth";
 
@@ -7,8 +8,8 @@ export default function signOutUser() {
         signOutBtn.addEventListener('click', () => {
             signOut(auth).then(() => {
                 
-            }).catch((error) => {
-                alert('Something went wrong. Please try again');
+            }).catch((error) => {               
+                showPopup(document.querySelector('.popup-error'));
                 throw new Error(error);
             })
         });
